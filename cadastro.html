@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <title> Cadastro </title>	
+        
+        
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1> Cadastre-se no MusicHistory </h1>
+                <hr>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    Bem Vindo ao MusicHistory, cadastre seus dados ao lado para finalizar um perfil conosco!
+                </div>
+
+                <div class="col-md-9">
+                <form>		
+                    <div class="form-group">
+                        
+                        <label for="nome_completo">Nome completo:</label>
+                        <input type="text" class="form-control" name="nome_completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" name="mail" required>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="idade">Idade:</label>
+                                <input type="number" class="form-control" name="idade" min="18" max="110" required>
+                            </div>					
+                            <div class="form-group">
+                                <label for="genero">Gênero sexual:</label><br/>
+                                <input type="radio" name="genero" value="masculino"> Masculino<br/>
+                                <input type="radio" name="genero" value="feminino"> Feminino<br/>
+                                <input type="radio" name="genero" value="feminino"> Outro<br/>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="data_pgto">Estilo Musical:</label>
+                                    <select name="Estilo Musical"> 
+                                        <option value="ba">Black</option> 
+                                        <option value="bl">Blues</option> 
+                                        <option value="ca">Clássico</option> 
+                                        <option value="el">Eletrônica</option> 
+                                        <option value="fo">Forró</option> 
+                                        <option value="fu">Funk</option> 
+                                        <option value="go">Gospel</option>  
+                                        <option value="hh">Hip Hop</option> 
+                                        <option value="hm">Heavy Metal</option> 
+                                        <option value="ce">Jazz</option> 
+                                        <option value="kp">K-pop</option>              
+                                        <option value="mp">MPB</option> 
+                                        <option value="pa">Pagode</option> 
+                                        <option value="po">Pop</option> 
+                                        <option value="pu">Punk</option> 
+                                        <option value="ra">Rap</option> 
+                                        <option value="ro">Rock Nacional</option> 
+                                        <option value="ro">Rock Internacional</option>
+                                        <option value="sc">Samba</option> 
+                                        <option value="se">Sertanejo</option> 
+
+                                    </select>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="conheceu">Como conheceu nosso site?</label><br/>
+                                <input type="checkbox" name="google" value="masculino"> Google<br/>
+                                <input type="checkbox" name="amigos" value="feminino"> Amigos <br/>
+                                <input type="checkbox" name="revistas_jornais" value="feminino"> Redes Sociais <br/>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="cor_favorita">Qual a sua cor favorita?</label><br/>
+                                <input type="color" class="form-control" name="cor_favorita">
+                            </div>
+                        </div>
+                    </div>	
+
+                    <div class="form-group" align="center">
+                        <input type="submit" value ="Cadastrar" class="btn btn-primary btn-lg btn-dark">				
+                    </div>
+                </form>	
+            </div>
+            </div>
+        </div>    
+    </body>
+
+</html>
